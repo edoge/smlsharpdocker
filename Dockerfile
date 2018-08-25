@@ -35,7 +35,7 @@ RUN cd /usr/local/src \
 #### GMP Library ####
 
 RUN cd /usr/local/src \
-    && wget https://gmplib.org/download/gmp/gmp-6.1.1.tar.bz2 \
+    && wget https://gmplib.org/download/gmp/gmp-6.1.2.tar.bz2 \
     && tar jxf gmp-6.1.2.tar.bz2 \
     && cd gmp-6.1.2 \
     && ./configure \
@@ -47,7 +47,7 @@ RUN cd /usr/local/src \
 
 RUN cd /usr/local/src \
     && wget https://github.com/lloyd/yajl/archive/2.1.0.tar.gz \
-    && tar xzf yajl2.1.0.tag.gz \
+    && tar xzf 2.1.0.tar.gz \
     && cd yajl-2.1.0 \
     && ./configure \
     && make \
@@ -65,4 +65,4 @@ RUN cd /usr/local/src \
     && make install \
     && make clean
 
-WORKDIR /usr/local/src
+WORKDIR /use/local/src
